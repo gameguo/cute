@@ -4,7 +4,7 @@
 
 namespace Cute
 {
-    class BaseApplication : implements IApplication
+    class BaseApplication : _implements_ IApplication
     {
 public:
         virtual int Initialize();

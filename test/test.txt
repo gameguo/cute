@@ -1,0 +1,2 @@
+GDI(Windows)和XCB(Linux)   这些矩形其实是由CPU绘制的，而不是GPU。因此这种绘制方式是很慢的。
+

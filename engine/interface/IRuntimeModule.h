@@ -4,7 +4,7 @@
 
 namespace Cute
 {
-    Interface IRuntimeModule
+    _Interface_ IRuntimeModule
     {
 public:
         // 析构

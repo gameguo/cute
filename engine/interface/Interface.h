@@ -6,6 +6,6 @@
 
 // #endif // __INTERFACE_H__
 
-#define Interface class
-
-#define implements public
+#define _Interface_ class
+#define _inherits_ public
+#define _implements_ public

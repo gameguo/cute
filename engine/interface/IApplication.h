@@ -3,10 +3,8 @@
 #include "Interface.h"
 #include "IRuntimeModule.h"
 
-namespace Cute 
-{
-    Interface IApplication : implements IRuntimeModule
-    {
+namespace Cute {
+    _Interface_ IApplication : _inherits_ IRuntimeModule {
 public:
         virtual int Initialize() = 0;
         virtual void Finalize() = 0;
