@@ -1,84 +1,13 @@
-// 将设置放入此文件中以覆盖默认值和用户设置。
 {
-    "files.defaultLanguage": "c", // ctrl+N新建文件后默认的语言
-    "c-cpp-flylint.cppcheck.enable": false,
-    "c-cpp-flylint.flexelint.enable": false,
-    "c-cpp-flylint.run": "onType", // 此选项貌似不起作用 
-    "c-cpp-flylint.clang.includePaths": [
-        "${workspaceRoot}",
-        "C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++",
-        "C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32",
-        "C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward",
-        "C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.1.0/include",
-        "C:/Program Files/LLVM/include",
-        "C:/Program Files/LLVM/x86_64-w64-mingw32/include",
-        "C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"
-    ],
-    "c-cpp-flylint.clang.defines": [
-        "_DEBUG",
-        "UNICODE",
-        "__GNUC__=7",
-        "__cdecl=__attribute__((__cdecl__))"
-    ],
-    "c-cpp-flylint.standard": [ // 此选项貌似也不起作用 
-        "c11",
-        "c++1z"
-    ],
-    "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法交互 
-    "code-runner.executorMap": {
-        "c": "cd $dir && clang $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c11 && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c++1z && $dir$fileNameWithoutExt"
+    "files.exclude":
+    {
+        "build/":true,
+        "Build/":true,
     },
-    "code-runner.saveFileBeforeRun": true,
-    "C_Cpp.clang_format_sortIncludes": true,
-    "C_Cpp.errorSquiggles": "Disabled",
+    "cmake.cmakePath": "C:/Program Files/CMake/bin/cmake",
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "MinGW Makefiles",
     "files.associations": {
-        "iostream": "cpp",
-        "cstddef": "cpp",
-        "map": "cpp",
-        "algorithm": "cpp",
-        "array": "cpp",
-        "atomic": "cpp",
-        "*.tcc": "cpp",
-        "cassert": "cpp",
-        "cctype": "cpp",
-        "cerrno": "cpp",
-        "climits": "cpp",
-        "clocale": "cpp",
-        "cmath": "cpp",
-        "cstdarg": "cpp",
-        "cstdint": "cpp",
-        "cstdio": "cpp",
-        "cstdlib": "cpp",
-        "cstring": "cpp",
-        "cwchar": "cpp",
-        "cwctype": "cpp",
-        "deque": "cpp",
-        "string": "cpp",
-        "unordered_map": "cpp",
-        "vector": "cpp",
-        "exception": "cpp",
-        "memory": "cpp",
-        "memory_resource": "cpp",
-        "optional": "cpp",
-        "string_view": "cpp",
-        "system_error": "cpp",
-        "tuple": "cpp",
-        "type_traits": "cpp",
-        "utility": "cpp",
-        "fstream": "cpp",
-        "initializer_list": "cpp",
-        "ios": "cpp",
-        "iosfwd": "cpp",
-        "istream": "cpp",
-        "limits": "cpp",
-        "new": "cpp",
-        "ostream": "cpp",
-        "queue": "cpp",
-        "sstream": "cpp",
-        "stdexcept": "cpp",
-        "streambuf": "cpp",
-        "random": "cpp",
-        "typeinfo": "cpp"
+        "iostream": "cpp"
     }
 }

@@ -11,7 +11,7 @@ int main(int argc, char** argv){
     int ret;
     
     if ((ret = g_pApp->Initialize()) != 0){
-        printf("App Initialize failed, will exit now.");
+        printf("Cute Initialize failed! ");
         return ret;
     }
 
@@ -23,6 +23,5 @@ int main(int argc, char** argv){
 
     g_pApp->Finalize();
     
-    printf("Cute Engine Exit! ");
     return 0;
 }
